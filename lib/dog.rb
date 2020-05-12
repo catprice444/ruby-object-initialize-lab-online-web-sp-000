@@ -7,6 +7,9 @@ attr_accessor :name
   end
   def breed=(breed)
     @breed = breed
+    if breed == nil
+      puts "Mutt"
+    end
   end
   def breed
     @breed
