@@ -1,14 +1,11 @@
 class Dog
 attr_accessor :name
 
-  def initialize(name, breed)
+  def initialize(name, breed = "Mutt")
     @name = name
     @breed = breed
-    if breed == nil
-      puts "Mutt"
-    end
   end
-  def breed=(breed)
+  def breed=(breed = "Mutt")
     @breed = breed
 
   end
